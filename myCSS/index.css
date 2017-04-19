@@ -3,10 +3,13 @@
 .top-buffer { margin-top:-17px; padding-top: 0; border-top: 0;}
 .side-buffer { width: 99%; margin-right: auto; margin-left: auto; display: block;}
 .top-buffer-fix {margin-top: -17px;}
+#myhov:hover{filter: brightness(1.1);}
 
 .mybg{
     background-size: cover;
     background-image: url("myIMG/mybg.jpg");
+    /*box-shadow: 0 0 8px 8px #1d1e1f inset;*/
+
 }
 
 input[type="checkbox"][id^="music_cb"]{  display: none;  }
@@ -88,7 +91,7 @@ label.music_lbl img {
 /* xs < 768 */
 @media screen and (max-width: 767px) {
     #descriptions {
-        font-size: .55em;
+        font-size: .40em;
         top: 2%;
     }
     .resp-height{
@@ -99,7 +102,7 @@ label.music_lbl img {
 @media screen and (min-width: 768px) {
     #descriptions {
         font-size: .8em;
-        top: 4%;
+        top: 0;
     }
     .resp-height{
         max-height:150px;
