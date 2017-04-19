@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="myCSS/index.css">
+
+        <script src="myJS/index.js" type="text/javascript"></script>
+
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+
+        <div id="crossgrad"></div>
+
+        <title>Miquel Valverde</title>
+        <div class="container" style="max-width: 768px; padding-left: 0; margin-top: 60px; color: #acaeb0;">
+            <h1><span class="highlighted addspaces" style=" line-height: 125%;  font-size: .8em; font-family: 'Open Sans', sans-serif;"> MIQUEL VALVERDE <br> 1997        </span></h1>
+        </div>
+        <div class="container" style="max-width: 768px; padding-left: 0; margin-top: 50px; color: #4ba070;">
+            <h2 style=" line-height: 125%;  font-size: 1.2em; font-family: 'Open Sans', sans-serif;">Learning self-taught is my passion. I consider myself a creative person, and
+                I like to work as clean and perfect as possible.</h2>
+        </div>
+        <div class="container" style="max-width: 768px; padding-left: 0; margin-top: 20px; color: #e6a675;">
+            <h2 style=" line-height: 125%;  font-size: 1.2em; font-family: 'Open Sans', sans-serif;">
+                Computer Engineering in Information System Management. </br>
+                Degree in Production and Development of Videogames.
+            </h2>
+        </div>
+    </head>
+    <body class="p-0 mybg" style="background-color: #464646;" >
+        <div class="container" style=" color: #666666; font-size: 1.5em; font-family: 'Open Sans', sans-serif; margin-top: 50px; max-width: 768px">
+            <div class="row">
+                <div class="col-md-4 col-4 col-sm-4 col-lg-4 col-xl-4 align-self-center p-0">
+                    <input type="checkbox" id="design_cb"/>
+                    <label for="design_cb" class="design_lbl">
+                        <img class="center-block img-fluid side-buffer resp-height"/>
+                    </label>
+                    <img id="icid" class="center-block img-fluid side-buffer" src="myCSS/myIMG/design_ic2.png" style="position: absolute; top: 0; pointer-events: none;"/>
+                    <p id="descriptions" class="text-center side-buffer" style="position: absolute; line-height: normal; color: white; pointer-events: none;">
+                        Since I was 12 I always loved design and being creative. That's how I got into the 3D graphics world.
+                    </p>
+                    <p class="text-center side-buffer top-buffer" style="background-color: #272727;"><br/>DESIGN</p>
+                    <p class="text-center top-buffer-fix side-buffer" style="font-size: .7em; background-color: #272727;">
+                        </br>
+                        Maya</br>
+                        Photoshop</br>
+                        Vray</br>
+                        Zbrush</br>
+                        Unity 3D</br>
+                        Blender</br>
+                        </br></br>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-4 col-sm-4 col-lg-4 col-xl-4 align-self-center p-0">
+                    <input type="checkbox" id="code_cb"/>
+                    <label for="code_cb" class="code_lbl">
+                        <img  class="center-block img-fluid side-buffer resp-height"/>
+                    </label>
+                    <img id="icid" class="center-block img-fluid side-buffer" src="myCSS/myIMG/code_ic2.png" style="position: absolute; top: 0; pointer-events: none;"/>
+                    <p id="descriptions" class="text-center side-buffer" style="position: absolute; line-height: normal; color: white; pointer-events: none;">
+                        ...Recently 3D graphics wasn't enough to expand my creativity, and I turned to love coding.
+                    </p>
+                    <p class="text-center side-buffer top-buffer" style="background-color: #272727;"><br/>CODE</p>
+                    <p class="text-center top-buffer-fix side-buffer" style="font-size: .7em; background-color: #272727;">
+                        </br>
+                        C#</br>
+                        Java</br>
+                        Javascript</br>
+                        Node js</br>
+                        SQL</br>
+                        HTML & CSS</br>
+                        </br></br>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-4 col-sm-4 col-lg-4 col-xl-4 align-self-center p-0">
+                    <input type="checkbox" id="music_cb"/>
+                    <label for="music_cb" class="music_lbl">
+                        <img  class="center-block img-fluid side-buffer resp-height" />
+                    </label>
+                    <img id="icid" class="center-block img-fluid side-buffer" src="myCSS/myIMG/music_ic2.png" style="position: absolute; top: 0; pointer-events: none;"/>
+                    <p id="descriptions" class="text-center side-buffer " style="position: absolute; line-height: normal; color: white; pointer-events: none;">
+                        When I was 10, I studied music theory and I played the piano. I still love it.
+                    </p>
+                    <p class="text-center side-buffer top-buffer" style="background-color: #272727;"><br/>MUSIC</p>
+                    <p class="text-center top-buffer-fix side-buffer" style="font-size: .7em; background-color: #272727;">
+                        </br>
+                        Piano</br>
+                        Music Theory</br>
+                        Composition</br>
+                        </br>
+                        </br>
+                        </br>
+                        </br></br>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <form action ="myPHP/index.php" method="post" name="mainIndexPHP">
+                <p>
+                    Your Name:<input name="_name" type="text"/>
+                </p>
+                <p>
+                    Your email:<input name="_email" type="text"/>
+                </p>
+                <p>
+                    Your msg:<textarea name="_msg"></textarea>&nbsp;
+                </p>
+                <p>
+                    <input type="submit" name="_submit" id="_submit" value="SEND!">
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

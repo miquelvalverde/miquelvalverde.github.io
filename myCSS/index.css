@@ -1,0 +1,153 @@
+.highlighted{background-color: #272727;}
+.addspaces{white-space: pre}
+.top-buffer { margin-top:-17px; padding-top: 0; border-top: 0;}
+.side-buffer { width: 99%; margin-right: auto; margin-left: auto; display: block;}
+.top-buffer-fix {margin-top: -17px;}
+
+.mybg{
+    background-size: cover;
+    background-image: url("myIMG/mybg.jpg");
+}
+
+input[type="checkbox"][id^="music_cb"]{  display: none;  }
+input[type="checkbox"][id^="code_cb"]{  display: none;  }
+input[type="checkbox"][id^="design_cb"]{  display: none;  }
+
+@-moz-document url-prefix() {
+    label.design_lbl img{
+        content: url("myIMG/design_bg.jpg");
+    }  :checked + label.design_lbl img {
+           content: url("myIMG/gradLine_bg.jpg");
+       }  :checked ~ #icid {
+              display: none;
+          }  :hover ~ #icid {
+                 animation: popcontent .4s;
+             } :checked ~ #descriptions {
+                   visibility: visible;
+               } #descriptions{
+                     visibility: hidden;
+                 } #icid{display: none;}
+}
+@supports (-ms-ime-align:auto) {
+
+    label.design_lbl img{
+        content: url("myIMG/design_bg.jpg");
+    }  :checked + label.design_lbl img {
+           content: url("myIMG/gradLine_bg.jpg");
+       }  :checked ~ #icid {
+              display: none;
+          }  :hover ~ #icid {
+                 animation: popcontent .4s;
+             } :checked ~ #descriptions {
+                   visibility: visible;
+               } #descriptions{
+                     visibility: hidden;
+                 } #icid{display: none;}
+}
+
+label.code_lbl img{
+    content: url("myIMG/code_bg.jpg");
+}  :checked + label.code_lbl img {
+       content: url("myIMG/gradLine_bg.jpg");
+   }  :checked ~ #icid {
+          display: none;
+      }  :hover ~ #icid {
+             animation: popcontent .4s;
+         } :checked ~ #descriptions {
+               visibility: visible;
+           } #descriptions{
+                 visibility: hidden;
+             } #icid{transform: scale(.8,.8);}
+label.design_lbl img{
+    content: url("myIMG/design_bg.jpg");
+}  :checked + label.design_lbl img {
+       content: url("myIMG/gradLine_bg.jpg");
+   }  :checked ~ #icid {
+          display: none;
+      }  :hover ~ #icid {
+             animation: popcontent .4s;
+         } :checked ~ #descriptions {
+               visibility: visible;
+           } #descriptions{
+                 visibility: hidden;
+             }
+label.music_lbl img {
+    content: url("myIMG/music_bg.jpg");
+}  :checked + label.music_lbl img {
+       content: url("myIMG/gradLine_bg.jpg");
+   }  :checked ~ #icid {
+          display: none;
+      }  :hover ~ #icid {
+             animation: popcontent .4s;
+         } :checked ~ #descriptions {
+               visibility: visible;
+           } #descriptions{
+                 visibility: hidden;
+             }
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    #descriptions {
+        font-size: .55em;
+        top: 2%;
+    }
+    .resp-height{
+        max-height:150px;
+    }
+}
+/* sm */
+@media screen and (min-width: 768px) {
+    #descriptions {
+        font-size: .8em;
+        top: 4%;
+    }
+    .resp-height{
+        max-height:150px;
+    }
+}
+/* md */
+@media screen and (min-width: 992px) {
+    #descriptions {
+        font-size: .8em;
+        top: 4%;
+    }
+    .resp-height{
+        max-height:150px;
+    }
+}
+/* lg */
+@media screen and (min-width: 1200px) {
+    #descriptions {
+        font-size: .8em;
+        top: 4%;
+    }
+    .resp-height{
+        max-height:150px;
+    }
+}
+
+
+@keyframes popcontent {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: scale(.8);
+        transform: scale(.8);
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    80% {
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+    }
+}
+
+#crossgrad{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height:2px;
+    position: relative;
+    top: -65px;
+    box-shadow: 0 0 75px 50px black;
+}
