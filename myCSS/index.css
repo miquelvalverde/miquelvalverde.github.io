@@ -5,11 +5,42 @@
 .top-buffer-fix {margin-top: -17px;}
 #myhov:hover{filter: brightness(1.1);}
 
+
+.gal{
+    height: 60px;
+    overflow: hidden;
+}
+
+
 .mybg{
     background-size: cover;
     background-image: url("myIMG/mybg.jpg");
-    /*box-shadow: 0 0 8px 8px #1d1e1f inset;*/
+}
 
+#contactSS{
+    /*background: -webkit-linear-gradient(45deg,rgba(255, 0, 234, 0.07),rgba(90, 169, 212, 0.08));*/
+    background: linear-gradient(45deg, rgba(78, 198, 166, 0.3), rgba(209, 127, 210, 0.25),rgba(26, 178, 234, 0.2));
+    background-size: 200% 600%;
+
+    -webkit-animation: contactGrad 5s ease infinite;
+    -moz-animation: contactGrad 5s ease infinite;
+    animation: contactGrad 5s ease infinite;
+}
+
+@-webkit-keyframes contactGrad {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes contactGrad {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes contactGrad {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 input[type="checkbox"][id^="music_cb"]{  display: none;  }
@@ -52,6 +83,7 @@ label.code_lbl img{
     content: url("myIMG/code_bg.jpg");
 }  :checked + label.code_lbl img {
        content: url("myIMG/gradLine_bg.jpg");
+       filter: contrast(1.2);
    }  :checked ~ #icid {
           display: none;
       }  :hover ~ #icid {
@@ -65,6 +97,7 @@ label.design_lbl img{
     content: url("myIMG/design_bg.jpg");
 }  :checked + label.design_lbl img {
        content: url("myIMG/gradLine_bg.jpg");
+       filter: contrast(1.2);
    }  :checked ~ #icid {
           display: none;
       }  :hover ~ #icid {
@@ -78,6 +111,7 @@ label.music_lbl img {
     content: url("myIMG/music_bg.jpg");
 }  :checked + label.music_lbl img {
        content: url("myIMG/gradLine_bg.jpg");
+       filter: contrast(1.2);
    }  :checked ~ #icid {
           display: none;
       }  :hover ~ #icid {
@@ -97,35 +131,47 @@ label.music_lbl img {
     .resp-height{
         max-height:150px;
     }
+    .knowledge{
+        font-size: .5em;
+    }
 }
 /* sm */
 @media screen and (min-width: 768px) {
     #descriptions {
-        font-size: .8em;
+        font-size: .75em;
         top: 0;
     }
     .resp-height{
         max-height:150px;
     }
+    .knowledge{
+        font-size: .6em;
+    }
 }
 /* md */
 @media screen and (min-width: 992px) {
     #descriptions {
-        font-size: .8em;
+        font-size: .75em;
         top: 4%;
     }
     .resp-height{
         max-height:150px;
+    }
+    .knowledge{
+        font-size: .7em;
     }
 }
 /* lg */
 @media screen and (min-width: 1200px) {
     #descriptions {
-        font-size: .8em;
+        font-size: .7em;
         top: 4%;
     }
     .resp-height{
         max-height:150px;
+    }
+    .knowledge{
+        font-size: .7em;
     }
 }
 
