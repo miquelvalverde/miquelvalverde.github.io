@@ -47,43 +47,23 @@ input[type="checkbox"][id^="music_cb"]{  display: none;  }
 input[type="checkbox"][id^="code_cb"]{  display: none;  }
 input[type="checkbox"][id^="design_cb"]{  display: none;  }
 
-@-moz-document url-prefix() {
-    label.design_lbl img{
-        content: url("myIMG/design_bg.jpg");
-    }  :checked + label.design_lbl img {
-           content: url("myIMG/gradLine_bg.jpg");
-       }  :checked ~ #icid {
-              display: none;
-          }  :hover ~ #icid {
-                 animation: popcontent .4s;
-             } :checked ~ #descriptions {
-                   visibility: visible;
-               } #descriptions{
-                     visibility: hidden;
-                 } #icid{display: none;}
-}
-@supports (-ms-ime-align:auto) {
 
-    label.design_lbl img{
-        content: url("myIMG/design_bg.jpg");
-    }  :checked + label.design_lbl img {
-           content: url("myIMG/gradLine_bg.jpg");
-       }  :checked ~ #icid {
-              display: none;
-          }  :hover ~ #icid {
-                 animation: popcontent .4s;
-             } :checked ~ #descriptions {
-                   visibility: visible;
-               } #descriptions{
-                     visibility: hidden;
-                 } #icid{display: none;}
-}
+.gal-buffer-ind { width: 99%;  margin-right: auto; margin-left: auto; display: block; max-height: 171px;}
+.gal-crop-ind { overflow: hidden; }
 
 label.code_lbl img{
-    content: url("myIMG/code_bg.jpg");
+   background: url("myIMG/code_bg.jpg");
+   background-size: 50%;
+    background-repeat: no-repeat;
+    height: 50px;
+
 }  :checked + label.code_lbl img {
-       content: url("myIMG/gradLine_bg.jpg");
+       background: url("myIMG/gradLine_bg.jpg");
+       background-size: 50%;
+       background-repeat: no-repeat;
        filter: contrast(1.2);
+       height: 50px;
+
    }  :checked ~ #icid {
           display: none;
       }  :hover ~ #icid {
@@ -94,10 +74,18 @@ label.code_lbl img{
                  visibility: hidden;
              } #icid{transform: scale(.8,.8);}
 label.design_lbl img{
-    content: url("myIMG/design_bg.jpg");
+    background: url("myIMG/design_bg.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 50px;
+
 }  :checked + label.design_lbl img {
-       content: url("myIMG/gradLine_bg.jpg");
+       background: url("myIMG/gradLine_bg.jpg");
+       background-size: 50%;
+       background-repeat: no-repeat;
        filter: contrast(1.2);
+       height: 50px;
+
    }  :checked ~ #icid {
           display: none;
       }  :hover ~ #icid {
@@ -108,10 +96,18 @@ label.design_lbl img{
                  visibility: hidden;
              }
 label.music_lbl img {
-    content: url("myIMG/music_bg.jpg");
+    background: url("myIMG/music_bg.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 50px;
+
 }  :checked + label.music_lbl img {
-       content: url("myIMG/gradLine_bg.jpg");
+       background: url("myIMG/gradLine_bg.jpg");
+       background-size: 50%;
+       background-repeat: no-repeat;
        filter: contrast(1.2);
+       height: 50px;
+
    }  :checked ~ #icid {
           display: none;
       }  :hover ~ #icid {
