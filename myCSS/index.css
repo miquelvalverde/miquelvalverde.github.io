@@ -18,13 +18,14 @@
 }
 
 #contactSS{
-    /*background: -webkit-linear-gradient(45deg,rgba(255, 0, 234, 0.07),rgba(90, 169, 212, 0.08));*/
     background: linear-gradient(45deg, rgba(78, 198, 166, 0.3), rgba(209, 127, 210, 0.25),rgba(26, 178, 234, 0.2));
     background-size: 200% 600%;
 
     -webkit-animation: contactGrad 5s ease infinite;
     -moz-animation: contactGrad 5s ease infinite;
     animation: contactGrad 5s ease infinite;
+
+    filter: saturate(0);
 }
 
 @-webkit-keyframes contactGrad {
@@ -173,17 +174,18 @@ label.music_lbl img {
 
 
 @keyframes popcontent {
+
     0%, 20%, 60%, 100% {
-        -webkit-transform: scale(.8);
-        transform: scale(.8);
+        -webkit-transform: scale(.7)translateY(-10px);
+        transform: scale(.7)translateY(-10px);
     }
     40% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
+        -webkit-transform: scale(1)translateY(-10px);
+        transform: scale(1)translateY(-10px);
     }
     80% {
-        -webkit-transform: scale(.9);
-        transform: scale(.9);
+        -webkit-transform: scale(.9)translateY(-10px);
+        transform: scale(.9)translateY(-10px);
     }
 }
 
