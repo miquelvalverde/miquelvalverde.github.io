@@ -59,7 +59,7 @@ label.code_lbl img{
     height: 50px;
 
 }  :checked + label.code_lbl img {
-       background: url("myIMG/gradLine_bg.jpg");
+       background: url("myIMG/grad_bg.jpg");
        background-size: 50%;
        background-repeat: no-repeat;
        filter: contrast(1.2);
@@ -81,7 +81,7 @@ label.design_lbl img{
     height: 50px;
 
 }  :checked + label.design_lbl img {
-       background: url("myIMG/gradLine_bg.jpg");
+       background: url("myIMG/grad_bg.jpg");
        background-size: 50%;
        background-repeat: no-repeat;
        filter: contrast(1.2);
@@ -103,7 +103,7 @@ label.music_lbl img {
     height: 50px;
 
 }  :checked + label.music_lbl img {
-       background: url("myIMG/gradLine_bg.jpg");
+       background: url("myIMG/grad_bg.jpg");
        background-size: 50%;
        background-repeat: no-repeat;
        filter: contrast(1.2);
